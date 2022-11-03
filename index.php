@@ -1,3 +1,5 @@
+<h1>Demonstration of PHP app with an ASCII cow</h1>
+
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
@@ -10,8 +12,6 @@ if(isset($_GET['message']) && $_GET['message'] != '') {
 	$text = htmlspecialchars($_GET['message']);
 }
 ?>
-
-<h1>Demonstration of PHP app with an ASCII cow</h1>
 
 <?php
 $cow = Farm::create(\Cowsayphp\Farm\Cow::class);
